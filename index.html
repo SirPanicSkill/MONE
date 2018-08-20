@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>MONE</title>
+	<!-- ==================Start Css Link===================== -->
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+	<!-- googlefonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Play:400,700&subset=cyrillic" rel="stylesheet">
+	<!-- bootstrap css link -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<!-- ==================End Css Link===================== -->
+</head>
+<body>
+	<header>
+		
+	</header>
+	<main>
+
+	</main>
+	<footer>
+
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function() {
+				try {
+					w.yaCounter45653997 = new Ya.Metrika({
+						id:45653997,
+						clickmap:true,
+						trackLinks:true,
+						accurateTrackBounce:true,
+						webvisor:true
+					});
+				} catch(e) { }
+			});
+
+			var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () { n.parentNode.insertBefore(s, n); };
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else { f(); }
+		})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<!--  /Yandex.Metrika counter -->
+	<script src="js/smtp.js"></script>
+	<script type="text/javascript">
+		function sendmail(nameuser, phone, email, sity, message, check) {
+			if ((nameuser=="") || (phone=="") || (email=="") || (sity=="") || (message=="") || (check==false)) {
+				alert("Заполните все поля!");
+			} else {
+				var emailbody = ('оставил заявку '+nameuser+', телефон для связи '+phone+', обратный электронный адрес '+email+', желаемый город '+sity+', дополнительное сообщение '+message);
+				Email.send("alessandro.welli@yandex.ru","my@myskin.top","This is the mail from myskin.top",emailbody,"smtp.yandex.ru","alessandro.welli@yandex.ru","Fktrcway2007");
+				alert("Ваше заявка отправлена, с Вами свяжутся.");
+			}
+			}
+	</script>
+</body>
+</html>
