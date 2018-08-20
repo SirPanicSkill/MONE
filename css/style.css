@@ -44,7 +44,109 @@ h2, h3 {
     text-align: center;
     letter-spacing: 5px;
 }
+h4 {
+    color: #3a5258;
+    font-size: 20px;
+    text-align: center;
+}
 .social a {
     margin-right: 10px;
+}
+.flex {
+    display: flex;
+}
+/* mail form */
+.single-input input,.single-input textarea {
+    border: 1px solid #e2e2e2;
+    height: 45px;
+    width: 100%;
+    padding-left: 15px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    text-transform: initial;
+}
+.single-input textarea {
+    height: 130px;
+    padding-top: 15px;
+}
+.single-input input:focus,.single-input textarea:focus {
+    border: 1px solid #80b7c5;
+}
+.single-input input{
+    background: #80b7c5;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.single-input input:focus{
+    border-bottom: 1px solid #80b7c5;
+}
+.single-input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #eee;
+}
+.single-input input::-moz-placeholder { /* Firefox 19+ */
+  color: #eee;
+}
+.single-input input:-ms-input-placeholder { /* IE 10+ */
+  color: #eee;
+}
+.single-input input:-moz-placeholder { /* Firefox 18- */
+  color: #eee;
+}
+.button{
+    margin-top: 20px;
+}
+.button a{
+    border: 1px solid #ffffff;
+    color: #fff;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0 5px;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    background: #80b7c5;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    font-weight: 400;
+    font-size: 16px;
+}
+/*add checkbox for feedback*/
+.skin_feedback {
+    justify-content: flex-start;
+    margin-left: 50px;
+}
+.skin_feedback input[type="checkbox"] {
+    display: none;
+}
+.skin_feedback label {
+    position: relative;
+    cursor: pointer;
+    color: #555;
+}
+.skin_feedback label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -44px;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.skin_feedback input[type="checkbox"]:checked ~ label::before {
+    width: 21px;
+    height: 10px;
+    border-top-style: none;
+    border-right-style: none;
+    transform: rotate(-45deg);
+}
+.skin_feedback_bottom label::before {
+    border: 2px solid #80b7c5;
 }
 /***** footer *****/

@@ -21,11 +21,67 @@
 	</header>
 	<main>
 		<h2>САЙТ НАХОДИТСЯ В РАЗРАБОТКЕ</h2>
+		<!-- ======== mail form =========== -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>ОСТАВЬТЕ ЗАЯВКУ</h2>
+					<h4><span>и получите индивидуальное</span> коммерческое предложение</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="row">
+						<div class="form-group col-md-6 col-sm-6 col-xs-12 mb-30">
+							<div class="single-input">
+								<input id="m1" type="email" placeholder="Ваше имя *">
+							</div>
+						</div>
+						<div class="form-group col-md-6 col-sm-6 col-xs-12 mb-30">
+							<div class="single-input">
+								<input id="m2" type="text" placeholder="Ваш телефон *">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-6 col-sm-6 col-xs-12 mb-30">
+							<div class="single-input">
+								<input id="m3" type="email" placeholder="Ваш email *">
+							</div>
+						</div>
+						<div class="form-group col-md-6 col-sm-6 col-xs-12 mb-30">
+							<div class="single-input">
+								<input id="m4" type="text" placeholder="Ваш город *">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12 col-sm-12 col-xs-12 mb-30">
+							<div class="single-input">
+								<!-- <input id="m5" type="text" placeholder="Дополнительное сообщение *"> -->
+								<textarea id="m5" placeholder="Дополнительное сообщение *"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12 col-sm-12 col-xs-12 mb-30">
+							<div class="single-input skin_feedback flex">
+								<input id="m6" type="checkbox">
+								<label for="m6">Даю согласие на обработку моих персональных данных *</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 text-center button">
+							<a href="javascript:sendmail($('#m1').val(),$('#m2').val(),$('#m3').val(),$('#m4').val(),$('#m5').val(),$('#m6').prop('checked'))">Оставить заявку</a>
+					</div>
+				</div>
+			</div>
+		</div>
 		<h3>+7 (495) 730-07-10 <br> г. Москва, Благовещенский переулок, д.1</h3>
 		<div class="social">
-			<a href="" class="fb"><img src="images/facebook.png" alt="facebook"></a>
-			<a href="" class="inst"><img src="images/instagram.png" alt="instagram"></a>
-			<a href="" class="YT"><img src="images/youtube.png" alt="youtube"></a>
+			<a href="https://www.instagram.com/mone_moscow/" class="fb"><img src="images/facebook.png" alt="facebook"></a>
+			<a href="https://www.facebook.com/monebeautysalons/" class="inst"><img src="images/instagram.png" alt="instagram"></a>
+			<a href="https://www.youtube.com/user/MONESALON/feed" class="YT"><img src="images/youtube.png" alt="youtube"></a>
 		</div>
 	</main>
 	<footer>
@@ -41,8 +97,8 @@
 				alert("Заполните все поля!");
 			} else {
 				var emailbody = ('оставил заявку '+nameuser+', телефон для связи '+phone+', обратный электронный адрес '+email+', желаемый город '+sity+', дополнительное сообщение '+message);
-				Email.send("alessandro.welli@yandex.ru","my@myskin.top","This is the mail from myskin.top",emailbody,"smtp.yandex.ru","alessandro.welli@yandex.ru","Fktrcway2007");
-				alert("Ваше заявка отправлена, с Вами свяжутся.");
+				Email.send("alessandro.welli@yandex.ru","mailto:mone@moneprofessional.com","This is the mail from moneprofessional.com",emailbody,"smtp.yandex.ru","alessandro.welli@yandex.ru","Fktrcway2007");
+				alert("Ваше заявка отправлена.");
 			}
 			}
 	</script>
