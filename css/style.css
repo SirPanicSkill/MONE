@@ -29,6 +29,12 @@ header {
     height: 147px;
 }
 /***** body *****/
+::selection {
+    background: #eee; /* Safari, Chrome, Opera */
+}
+::-moz-selection {
+    background: #eee; /* FireFox */
+}
 main {
     height: auto;
     min-height: calc(100vh - 334px);
