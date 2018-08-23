@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/background.png);
+    background-image: url(../images/background.svg);
     border-bottom: 7px solid #dad5c8;
 }
 .logo {
