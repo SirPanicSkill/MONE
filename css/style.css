@@ -18,15 +18,15 @@ body {
 /***** header *****/
 header {
     width: 100%;
-    height: 334px;
+    height: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(../images/background.svg);
-    border-bottom: 7px solid #dad5c8;
+    border-bottom: 7px solid #7D6F45;
 }
 .logo {
-    height: 147px;
+    height: 130px;
 }
 /***** body *****/
 ::selection {
@@ -43,23 +43,36 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #80c5c2;
+    background-color: #44c6bf;
 }
-h2, h3 {
-    color: white;
+h2 {
+    color: #1f7c78;
     text-align: center;
+    font-size: 25px;
     letter-spacing: 5px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+h3 {
+    color: #e2e2e2;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
 }
 h4 {
-    color: #3a5258;
-    font-size: 20px;
+    color: #e2e2e2;
+    font-size: 18px;
     text-align: center;
+    letter-spacing: 2px;
+    margin-top: 100px;
 }
 .flex {
     display: flex;
 }
 /* mail form */
 .single-input input,.single-input textarea {
+    background: #f0efef;
     border: 1px solid #e2e2e2;
     height: 45px;
     width: 100%;
@@ -73,31 +86,32 @@ h4 {
     height: 130px;
     padding-top: 15px;
 }
-.single-input input:focus,.single-input textarea:focus {
-    outline: 1px solid #fff;
+.single-input textarea:focus {
+    outline: #e2e2e2;
 }
 .single-input input{
-    background: #80b7c5;
+    background: #f0efef;
     border-bottom: 1px solid #fff;
-    color: #fff;
+    color: #6c6c6c;
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
 }
 .single-input input:focus{
-    border-bottom: 1px solid #80b7c5;
+    /*border-bottom: 1px solid #80b7c5;*/
+    outline: #e2e2e2;
 }
 .single-input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #eee;
+  color: #6c6c6c;
 }
 .single-input input::-moz-placeholder { /* Firefox 19+ */
-  color: #eee;
+  color: #6c6c6c;
 }
 .single-input input:-ms-input-placeholder { /* IE 10+ */
-  color: #eee;
+  color: #6c6c6c;
 }
 .single-input input:-moz-placeholder { /* Firefox 18- */
-  color: #eee;
+  color: #6c6c6c;
 }
 .button{
     margin-top: 20px;
@@ -110,7 +124,7 @@ h4 {
     margin: 0 5px;
     padding: 10px 35px;
     text-transform: uppercase;
-    background: #80b7c5;
+    background: #6c6c6c;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
@@ -128,7 +142,7 @@ h4 {
 .skin_feedback label {
     position: relative;
     cursor: pointer;
-    color: #555;
+    color: #ffffff;
 }
 .skin_feedback label::before {
     content: "";
