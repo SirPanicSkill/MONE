@@ -18,15 +18,16 @@ body {
 /***** header *****/
 header {
     width: 100%;
-    height: 270px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(../images/background.svg);
-    border-bottom: 7px solid #7D6F45;
+    border-bottom: 7px solid #d5cfc0;
+    background-size: cover;
 }
 .logo {
-    height: 130px;
+    height: 100px;
 }
 /***** body *****/
 ::selection {
@@ -165,6 +166,9 @@ h4 {
 }
 .skin_feedback_bottom label::before {
     border: 2px solid #80b7c5;
+}
+.label{
+    font-style: normal;
 }
 /* social */
 .social {
