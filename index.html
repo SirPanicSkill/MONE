@@ -10,16 +10,34 @@
 	<!-- ==================Start Css Link===================== -->
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/fonts.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link href="css/fonts.css" type="text/css" rel="stylesheet">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
 	<!-- ==================End Css Link===================== -->
 </head>
 <body>
 	<header>
 		<img src="images/logo.svg" class="logo"/>
 	</header>
-	<main>
+	<main class="wrapper">
+		<article class="art art__0">
+			<div class="art__wrapper">
+				<img src="images/logo_small.svg" alt="logo" class="art-0__logo-1">
+				<span class="clr-white art-0__text-1">ОФИЦИАЛЬНЫЙ<br/>СТИЛИСТ</span>
+				<img src="images/img_0.svg" alt="konkurs_miss-rossiya" class="art-0__logo-2">
+				<a href="https://salonmone.ru" target="_blank" class="clr-black art-0__link">salonmone.ru</a>
+				<a href="https://moneprofessional.com" target="_blank" class="clr-black art-0__link">moneprofessional.com</a>
+				<p class="clr-white art-0__text-2">По вопросам сотрудничества обращаться по телефону</p>
+				<a href="tel:+74957300710" class="clr-black art-0__phone">+7 (495) 730 07 10</a>
+			</div>
+			<div class="art__wrapper">
+				<img src="images/logo_white.svg" alt="logo" class="art-0__logo-3">
+				<p class="clr-white art-0__text-3">ПРОФЕССИОНАЛЬНАЯ<br/>КОСМТИКА ДЛЯ ВОЛОС</p>
+			</div>
+		</article>
+	</main>
+	<footer>
 		<h2>САЙТ НАХОДИТСЯ В РАЗРАБОТКЕ</h2>
 		<!-- ======== mail form =========== -->
 		<div class="container">
@@ -85,14 +103,13 @@
 			<a href="https://www.facebook.com/monebeautysalons/" class="inst"><img src="images/instagram.png" alt="instagram"></a>
 			<a href="https://www.youtube.com/user/MONESALON/feed" class="YT"><img src="images/youtube.png" alt="youtube"></a>
 		</div>
-	</main>
-	<footer>
-
 	</footer>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/smtp.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/smtp.js"></script>
 	<script type="text/javascript">
 		function sendmail(nameuser, phone, email, sity, message, check) {
 			if ((nameuser=="") || (phone=="") || (email=="") || (sity=="") || (message=="") || (check==false)) {
