@@ -281,32 +281,32 @@ footer .button a{
     }
         /*article 0*/
         .art-0__logo-1 {
-            width: 16vw;
+            width: 20vw;
             margin-bottom: 1.3vw;
         }
         .art-0__logo-2 {
-            width: 40vw;
-            margin: 35px 0 60px;
+            width: 47vw;
+            margin: 20vw 0 25vw;
         }
         .art-0__logo-3 {
             width: 50vw;
         }
         .art-0__text-1 {
-            font-size: 5vw;
+            font-size: 6vw;
             line-height: 1.2em;
         }
         .art-0__text-2 {
-            font-size: 3vw;
+            font-size: 5vw;
         }
         .art-0__text-3 {
             font-size: 4.6vw;
             margin: 30px 0;
         }
         .art-0__link {
-            font-size: 3vw;
+            font-size: 5vw;
         }
         .art-0__phone{
-            font-size: 3.2vw;
+            font-size: 5.2vw;
         }
 }
 /*576px < mobile landscape, tablet < 768px*/
