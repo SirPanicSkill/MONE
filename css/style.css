@@ -14,6 +14,9 @@ body {
     overflow-x: hidden;
     background-color: white;
 }
+.onepage-pagination {
+    transform: translateY(-50%);
+}
 .flex {
     display: flex !important;
 }
@@ -117,6 +120,7 @@ article {
     }
     .art-0__text-2 {
         font-size: 1vw;
+        width: 100%;
     }
     .art-0__text-3 {
         font-size: 1.77vw;
@@ -202,7 +206,7 @@ article {
     }
     .art-2__main {
         width: 100%;
-        height: auto;
+        height: calc(100% - 14vw);
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -266,7 +270,7 @@ article {
     }
     .art-3__main {
         width: 100%;
-        height: auto;
+        height: calc(100% - 14vw);
         display: block;
         text-align: left;
         background-color: #56595b;
@@ -331,7 +335,7 @@ article {
     }
     .art-4__main {
         width: 100%;
-        height: auto;
+        height: calc(100% - 14vw);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -339,7 +343,7 @@ article {
         background-color: #8d6a4c;
         background-clip: content-box;
         background-image: url(../images/img_4-1.png);
-        background-position: 100% 1000%;
+        background-position: 100% 100%;
         background-repeat: no-repeat;
         background-size: contain;
         margin: 7vw;
@@ -401,7 +405,7 @@ article {
     }
     .art-5__main {
         width: 100%;
-        height: auto;
+        height: calc(100% - 14vw);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -409,7 +413,7 @@ article {
         background-color: #8d6a4c;
         background-clip: content-box;
         background-image: url(../images/img_5-1.png);
-        background-position: 100% 1000%;
+        background-position: 100% 100%;
         background-repeat: no-repeat;
         background-size: contain;
         margin: 7vw;
@@ -471,7 +475,7 @@ article {
     }
     .art-6__main {
         width: 100%;
-        height: auto;
+        height: calc(100% - 14vw);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -479,7 +483,7 @@ article {
         background-color: #8d6a4c;
         background-clip: content-box;
         /* background-image: url(../images/img_6-1.png); */
-        background-position: 100% 1000%;
+        background-position: 100% 100%;
         background-repeat: no-repeat;
         background-size: contain;
         margin: 7vw;
@@ -541,7 +545,7 @@ article {
     }
     .art-7__main {
         width: 100%;
-        height: auto;
+        height: calc(100% - 14vw);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -549,7 +553,7 @@ article {
         background-color: #8d6a4c;
         background-clip: content-box;
         background-image: url(../images/img_7-1.png);
-        background-position: 100% 1000%;
+        background-position: 100% 100%;
         background-repeat: no-repeat;
         background-size: contain;
         margin: 7vw;
@@ -611,7 +615,7 @@ article {
     }
     .art-8__main {
         width: 100%;
-        height: auto;
+        height: calc(100% - 14vw);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -619,7 +623,7 @@ article {
         background-color: #8d6a4c;
         background-clip: content-box;
         /* background-image: url(../images/img_8-1.png); */
-        background-position: 100% 1000%;
+        background-position: 100% 100%;
         background-repeat: no-repeat;
         background-size: contain;
         margin: 7vw;
@@ -681,7 +685,7 @@ article {
     }
     .art-9__main {
         width: 100%;
-        height: auto;
+        height: calc(100% - 14vw);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -689,7 +693,7 @@ article {
         background-color: #8d6a4c;
         background-clip: content-box;
         background-image: url(../images/img_9-1.png);
-        background-position: 100% 1000%;
+        background-position: 100% 100%;
         background-repeat: no-repeat;
         background-size: contain;
         margin: 7vw;
@@ -751,7 +755,7 @@ article {
     }
     .art-10__main {
         width: 100%;
-        height: auto;
+        height: calc(100% - 14vw);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -759,7 +763,7 @@ article {
         background-color: #56595b;
         background-clip: content-box;
         /*background-image: url(../images/img_10-1.png);*/
-        background-position: 100% 1000%;
+        background-position: 100% 100%;
         background-repeat: no-repeat;
         background-size: contain;
         margin: 7vw;
@@ -821,7 +825,7 @@ article {
     }
     .art-11__main {
         width: 100%;
-        height: auto;
+        height: calc(100% - 14vw);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -829,9 +833,9 @@ article {
         background-color: #8d6a4c;
         background-clip: content-box;
         background-image: url(../images/img_11-1.png);
-        background-position: 100% 1000%;
+        background-position: 100% 100%;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 41%;
         margin: 7vw;
         position: relative;
         overflow: hidden;
@@ -884,9 +888,9 @@ article {
     }
 
 /***** footer *****/
-footer {
+.footer {
     height: auto;
-    min-height: calc(100vh - 334px);
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -894,7 +898,7 @@ footer {
     align-items: center;
     background-color: #5cc5c4;
 }
-footer h2 {
+.footer h2 {
     color: #1f7c78;
     text-align: center;
     font-size: 25px;
@@ -902,21 +906,21 @@ footer h2 {
     margin-top: 150px;
     margin-bottom: 100px;
 }
-footer h3 {
+.footer h3 {
     color: #e2e2e2;
     text-align: center;
     font-size: 20px;
     letter-spacing: 2px;
     margin-bottom: 25px;
 }
-footer h4 {
+.footer h4 {
     color: #e2e2e2;
     font-size: 18px;
     text-align: center;
     letter-spacing: 2px;
-    margin-top: 100px;
+    /* margin-top: 3vw; */
 }
-footer .label {
+.footer .label {
     white-space: normal;
 }
 /* mail form */
@@ -965,7 +969,7 @@ footer .label {
 .button{
     margin-top: 20px;
 }
-footer .button a{
+.footer .button a{
     border: 1px solid #ffffff;
     color: #fff;
     display: inline-block;
@@ -1020,7 +1024,7 @@ footer .button a{
 }
 /* social */
 .social {
-    margin: 50px 0;
+    /* margin: 3vw 0; */
 }
 .social a {
     margin-right: 10px;
@@ -1170,9 +1174,9 @@ footer .button a{
 /*mobile < 767.98px*/
 @media (max-width: 767.98px) {
     article {
-        height: auto;
+        height: auto !important;
     }
-	.art {
+	.art, article.footer {
         flex-direction: column;
         align-items: center;
     }
@@ -1217,6 +1221,7 @@ footer .button a{
         
         /*article 2*/ 
         .art-2__main {
+            height: calc(100% - 30vw);
             margin: 15vw;
         }
         .art-2__left::before {
@@ -1233,6 +1238,7 @@ footer .button a{
         }
         /*article 3*/ 
         .art-3__main {
+            height: calc(100% - 30vw);
             margin: 15vw;
         }
         .art-3__left::before {
@@ -1249,6 +1255,7 @@ footer .button a{
         }
         /*article 4*/ 
         .art-4__main {
+            height: calc(100% - 30vw);
             margin: 15vw;
             display: block;
             background-image: none;
@@ -1271,6 +1278,7 @@ footer .button a{
         }
         /*article 5*/ 
         .art-5__main {
+            height: calc(100% - 30vw);
             margin: 15vw;
             display: block;
             background-image: none;
@@ -1293,6 +1301,7 @@ footer .button a{
         }
         /*article 6*/ 
         .art-6__main {
+            height: calc(100% - 30vw);
             margin: 15vw;
             display: block;
             background-image: none;
@@ -1315,6 +1324,7 @@ footer .button a{
         }
         /*article 7*/ 
         .art-7__main {
+            height: calc(100% - 30vw);
             margin: 15vw;
             display: block;
             background-image: none;
@@ -1337,6 +1347,7 @@ footer .button a{
         }
         /*article 8*/ 
         .art-8__main {
+            height: calc(100% - 30vw);
             margin: 15vw;
             display: block;
             background-image: none;
@@ -1359,6 +1370,7 @@ footer .button a{
         }
         /*article 9*/ 
         .art-9__main {
+            height: calc(100% - 30vw);
             margin: 15vw;
             display: block;
             background-image: none;
@@ -1381,6 +1393,7 @@ footer .button a{
         }
         /*article 10*/ 
         .art-10__main {
+            height: calc(100% - 30vw);
             margin: 15vw;
             display: block;
             background-image: none;
@@ -1403,6 +1416,7 @@ footer .button a{
         }
         /*article 11*/ 
         .art-11__main {
+            height: calc(100% - 30vw);
             margin: 15vw;
             display: block;
             background-image: none;

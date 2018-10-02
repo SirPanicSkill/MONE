@@ -11,7 +11,7 @@
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
 	<link href="css/fonts.css" type="text/css" rel="stylesheet">
 	<link href="css/style.css" type="text/css" rel="stylesheet">
 	<!-- ==================End Css Link===================== -->
@@ -206,77 +206,76 @@
 				</div>
 			</div>
 		</article>
+		<article class="footer">
+			<!-- ======== mail form =========== -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3>
+							<div>Вы можете оставить свою заявку и получить</div>
+							<div>индивидуальное коммерческое предложение</div>
+						</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="row">
+							<div class="form-group col-md-6 col-sm-6 col-xs-12 mb-30">
+								<div class="single-input">
+									<input id="m1" type="email" placeholder="Ваше имя *">
+								</div>
+							</div>
+							<div class="form-group col-md-6 col-sm-6 col-xs-12 mb-30">
+								<div class="single-input">
+									<input id="m2" type="text" placeholder="Ваш телефон *">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-md-6 col-sm-6 col-xs-12 mb-30">
+								<div class="single-input">
+									<input id="m3" type="email" placeholder="Ваш email *">
+								</div>
+							</div>
+							<div class="form-group col-md-6 col-sm-6 col-xs-12 mb-30">
+								<div class="single-input">
+									<input id="m4" type="text" placeholder="Ваш город *">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-md-12 col-sm-12 col-xs-12 mb-30">
+								<div class="single-input">
+									<!-- <input id="m5" type="text" placeholder="Дополнительное сообщение *"> -->
+									<textarea id="m5" placeholder="Дополнительное сообщение *"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-md-12 col-sm-12 col-xs-12 mb-30">
+								<div class="single-input skin_feedback flex">
+									<input id="m6" type="checkbox">
+									<label for="m6" class="label">Даю согласие на обработку моих персональных данных *</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 text-center button">
+								<a href="javascript:sendmail($('#m1').val(),$('#m2').val(),$('#m3').val(),$('#m4').val(),$('#m5').val(),$('#m6').prop('checked'))">Оставить заявку</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4>+7 (495) 730-07-10 <br> г. Москва, Благовещенский переулок, д.1</h4>
+			<div class="social">
+				<a href="https://www.instagram.com/mone_moscow/" class="fb"><img src="images/facebook.png" alt="facebook"></a>
+				<a href="https://www.facebook.com/monebeautysalons/" class="inst"><img src="images/instagram.png" alt="instagram"></a>
+				<a href="https://www.youtube.com/user/MONESALON/feed" class="YT"><img src="images/youtube.png" alt="youtube"></a>
+			</div>
+		</article>
 	</main>
-	<footer>
-		<!-- ======== mail form =========== -->
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h3>
-						<div>Вы можете оставить свою заявку и получить</div>
-						<div>индивидуальное коммерческое предложение</div>
-					</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="row">
-						<div class="form-group col-md-6 col-sm-6 col-xs-12 mb-30">
-							<div class="single-input">
-								<input id="m1" type="email" placeholder="Ваше имя *">
-							</div>
-						</div>
-						<div class="form-group col-md-6 col-sm-6 col-xs-12 mb-30">
-							<div class="single-input">
-								<input id="m2" type="text" placeholder="Ваш телефон *">
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group col-md-6 col-sm-6 col-xs-12 mb-30">
-							<div class="single-input">
-								<input id="m3" type="email" placeholder="Ваш email *">
-							</div>
-						</div>
-						<div class="form-group col-md-6 col-sm-6 col-xs-12 mb-30">
-							<div class="single-input">
-								<input id="m4" type="text" placeholder="Ваш город *">
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group col-md-12 col-sm-12 col-xs-12 mb-30">
-							<div class="single-input">
-								<!-- <input id="m5" type="text" placeholder="Дополнительное сообщение *"> -->
-								<textarea id="m5" placeholder="Дополнительное сообщение *"></textarea>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group col-md-12 col-sm-12 col-xs-12 mb-30">
-							<div class="single-input skin_feedback flex">
-								<input id="m6" type="checkbox">
-								<label for="m6" class="label">Даю согласие на обработку моих персональных данных *</label>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-12 text-center button">
-							<a href="javascript:sendmail($('#m1').val(),$('#m2').val(),$('#m3').val(),$('#m4').val(),$('#m5').val(),$('#m6').prop('checked'))">Оставить заявку</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<h4>+7 (495) 730-07-10 <br> г. Москва, Благовещенский переулок, д.1</h4>
-		<div class="social">
-			<a href="https://www.instagram.com/mone_moscow/" class="fb"><img src="images/facebook.png" alt="facebook"></a>
-			<a href="https://www.facebook.com/monebeautysalons/" class="inst"><img src="images/instagram.png" alt="instagram"></a>
-			<a href="https://www.youtube.com/user/MONESALON/feed" class="YT"><img src="images/youtube.png" alt="youtube"></a>
-		</div>
-	</footer>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/scrolloverflow.js"></script>
-	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/smtp.js"></script>
 	<script type="text/javascript">
