@@ -1037,6 +1037,35 @@ article {
     .dNone {
         display: none !important;
     }
+    /*article 0*/
+    .art-0__logo-1 {
+        width: 20vh !important;
+        margin-bottom: 1.3vh !important;
+    }
+    .art-0__logo-2 {
+        width: 47vh !important;
+        margin: 2vh 0 2vh !important;
+    }
+    .art-0__logo-3 {
+        width: 50vh !important;
+    }
+    .art-0__text-1 {
+        font-size: 6vh !important;
+        line-height: 1.2em !important;
+    }
+    .art-0__text-2 {
+        font-size: 5vh !important;
+    }
+    .art-0__text-3 {
+        font-size: 4.6vh !important;
+        margin: 30px 0 !important;
+    }
+    .art-0__link {
+        font-size: 5vh !important;
+    }
+    .art-0__phone{
+        font-size: 5.2vh !important;
+    }
 }
 /*mobile < 576px */
 @media (max-width: 576px ) {
