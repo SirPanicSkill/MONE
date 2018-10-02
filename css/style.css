@@ -50,6 +50,8 @@ header {
     background-image: url(../images/bck_2.png);
     border-bottom: 7px solid #d5cfc0;
     background-size: cover;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .logo {
     height: 100px;
@@ -159,6 +161,9 @@ footer h4 {
 }
 .flex {
     display: flex;
+}
+footer .label {
+    white-space: normal;
 }
 /* mail form */
 .single-input input,.single-input textarea {
