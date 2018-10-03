@@ -84,6 +84,11 @@ article {
     height: 100vh;
     flex-direction: row;
 }
+.art__text-0 {
+    font-size: calc(18px + (18 - 18) * ((100vw - 300px) / (1900 - 300)));
+    position: absolute;
+    bottom: 0;
+}
     /*article 0*/
     .art-0 {
         background-color: #5cc5c4;
@@ -311,8 +316,10 @@ article {
     }
     .art-3__img-1 {
         float: right;
-        width: 12vw;
-        min-width: 170px;
+        height: 40%;
+        clear: both;
+        padding: 0;
+        box-sizing: content-box;
     }
     .art-3__text-4 {
         font-size: calc(18px + (18 - 18) * ((100vw - 300px) / (1900 - 300)));
@@ -336,22 +343,17 @@ article {
     .art-4__main {
         width: 100%;
         height: calc(100% - 14vw);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: block;
         text-align: left;
         background-color: #8d6a4c;
         background-clip: content-box;
-        background-image: url(../images/img_4-1.png);
-        background-position: 100% 100%;
-        background-repeat: no-repeat;
-        background-size: contain;
         margin: 7vw;
         position: relative;
         overflow: hidden;
     }
     .art-4__main > * {
         padding: 10px 20px;
+        display: block;
     }
     .art-4__left {
         flex-direction: row;
@@ -380,18 +382,20 @@ article {
         line-height: 23px;
     }
     .art-4__img-1 {
-        display: none;
         float: right;
-        width: 12vw;
-        min-width: 170px;
+        height: 100%;
+        clear: both;
+        padding: 0;
+        box-sizing: content-box;
     }
-    .art-4__text-4 {
+    .art-4__text-4:not(.art__text-0) {
         font-size: calc(18px + (18 - 18) * ((100vw - 300px) / (1900 - 300)));
         line-height: 18px;
     }
     .art-4__text-4-bold {
         font-weight: bold;
     }
+
 
     /*article 5*/  
     .art-5__img-2 {
@@ -406,22 +410,16 @@ article {
     .art-5__main {
         width: 100%;
         height: calc(100% - 14vw);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         text-align: left;
         background-color: #8d6a4c;
         background-clip: content-box;
-        background-image: url(../images/img_5-1.png);
-        background-position: 100% 100%;
-        background-repeat: no-repeat;
-        background-size: contain;
         margin: 7vw;
         position: relative;
         overflow: hidden;
     }
     .art-5__main > * {
         padding: 10px 20px;
+        display: block;
     }
     .art-5__left {
         flex-direction: row;
@@ -476,22 +474,17 @@ article {
     .art-6__main {
         width: 100%;
         height: calc(100% - 14vw);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: block;
         text-align: left;
         background-color: #8d6a4c;
         background-clip: content-box;
-        /* background-image: url(../images/img_6-1.png); */
-        background-position: 100% 100%;
-        background-repeat: no-repeat;
-        background-size: contain;
         margin: 7vw;
         position: relative;
         overflow: hidden;
     }
     .art-6__main > * {
         padding: 10px 20px;
+        display: block;
     }
     .art-6__left {
         flex-direction: row;
@@ -546,22 +539,17 @@ article {
     .art-7__main {
         width: 100%;
         height: calc(100% - 14vw);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: block;
         text-align: left;
         background-color: #8d6a4c;
         background-clip: content-box;
-        background-image: url(../images/img_7-1.png);
-        background-position: 100% 100%;
-        background-repeat: no-repeat;
-        background-size: contain;
         margin: 7vw;
         position: relative;
         overflow: hidden;
     }
     .art-7__main > * {
         padding: 10px 20px;
+        display: block;
     }
     .art-7__left {
         flex-direction: row;
@@ -590,7 +578,7 @@ article {
         line-height: 23px;
     }
     .art-7__img-1 {
-        display: none;
+        display: block;
         float: right;
         width: 12vw;
         min-width: 170px;
@@ -616,22 +604,17 @@ article {
     .art-8__main {
         width: 100%;
         height: calc(100% - 14vw);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: block;
         text-align: left;
         background-color: #8d6a4c;
         background-clip: content-box;
-        /* background-image: url(../images/img_8-1.png); */
-        background-position: 100% 100%;
-        background-repeat: no-repeat;
-        background-size: contain;
         margin: 7vw;
         position: relative;
         overflow: hidden;
     }
     .art-8__main > * {
         padding: 10px 20px;
+        display: block;
     }
     .art-8__left {
         flex-direction: row;
@@ -686,22 +669,16 @@ article {
     .art-9__main {
         width: 100%;
         height: calc(100% - 14vw);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: block;
         text-align: left;
         background-color: #8d6a4c;
-        background-clip: content-box;
-        background-image: url(../images/img_9-1.png);
-        background-position: 100% 100%;
-        background-repeat: no-repeat;
-        background-size: contain;
         margin: 7vw;
         position: relative;
         overflow: hidden;
     }
     .art-9__main > * {
         padding: 10px 20px;
+        display: block;
     }
     .art-9__left {
         flex-direction: row;
@@ -730,7 +707,7 @@ article {
         line-height: 23px;
     }
     .art-9__img-1 {
-        display: none;
+        display: block;
         float: right;
         width: 12vw;
         min-width: 170px;
@@ -756,9 +733,7 @@ article {
     .art-10__main {
         width: 100%;
         height: calc(100% - 14vw);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: block;
         text-align: left;
         background-color: #56595b;
         background-clip: content-box;
@@ -772,6 +747,7 @@ article {
     }
     .art-10__main > * {
         padding: 10px 20px;
+        display: block;
     }
     .art-10__left {
         flex-direction: row;
@@ -1027,11 +1003,33 @@ article {
     /* margin: 3vw 0; */
 }
 .social a {
-    margin-right: 10px;
+    margin-right: 1vw 0;
 }
 /**************************************
             	MADIA
 ***************************************/
+/*portrait fix*/
+@media (orientation: portrait) {
+    .dPortraitNone {
+        display: none !important;
+    }
+    [class*=__main]:not(.art-2__main) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    [class*=__main] > * {
+
+    }
+    .art__text-0 {
+        position: relative;
+    }
+    /*article 3*/
+    .art-3__img-1 {
+        width: 100%;
+        height: auto;
+    }
+}
 /*landscape fix*/
 @media (max-width: 767.98px) and (max-height: 498px) {
     .dNone {
@@ -1200,6 +1198,13 @@ article {
         display: none !important;
     }
 }
+/*mobile < 1000px*/
+@media (max-height: 1000px) {
+    .art-4__img-1 {
+        height: auto;
+        width: 11vh;
+    }
+}
 /*mobile < 767.98px*/
 @media (max-width: 767.98px) {
     article {
@@ -1212,6 +1217,9 @@ article {
     .art__wrapper {
         height: 100vh;
         width: 100%;
+    }
+    .art__text-0 {
+        position: relative;
     }
         /*article 0*/
         .art-0__logo-1 {
@@ -1473,7 +1481,34 @@ article {
 
 /*laptop > 1280px*/
 @media (min-width: 1280px) {
+    .art-2__text-2,
+    .art-3__text-2,
+    .art-4__text-2,
+    .art-5__text-2,
+    .art-6__text-2,
+    .art-7__text-2,
+    .art-8__text-2,
+    .art-9__text-2,
+    .art-10__text-2,
     .art-11__text-2 {
+        line-height: 27px;
+    }
+    .art-3__text-1 {
+        line-height: 50px;
+    }
+}
+/*laptop < 1880px*/
+@media (max-width: 1880px) {
+    .art-2__main,
+    .art-3__main,
+    .art-4__main,
+    .art-5__main,
+    .art-6__main,
+    .art-7__main,
+    .art-8__main,
+    .art-9__main,
+    .art-10__main,
+    .art-11__main {
         line-height: 27px;
     }
 }
