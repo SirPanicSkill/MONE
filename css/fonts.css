@@ -8,3 +8,13 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: "Pragmatica Bold";
+  src: url('../fonts/Pragmatica Bold/PragmaticaBold.eot'); /* IE9 Compat Modes */
+  src: url("../fonts/Pragmatica Bold/PragmaticaBold.otf") format("otf"),
+       url('../fonts/Pragmatica Bold/PragmaticaBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Pragmatica Bold/PragmaticaBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Pragmatica Bold/PragmaticaBold.svg#') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+}
