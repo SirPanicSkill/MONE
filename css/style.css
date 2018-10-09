@@ -149,10 +149,10 @@ article {
         width: 100%;
         height: 100%;
         background-color: #5cc5c4;
-        background-image: url(../images/img_1.png);
-        background-position: 50% 50%;
+        background-image: url(../images/logo.svg), url(../images/img_1.png);
+        background-position: 2% 2%, 50% 50%;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 12vw auto, cover;
     }
     .art-1__left {
         background-color: #5cc5c4;
@@ -899,8 +899,21 @@ article {
     letter-spacing: 2px;
     /* margin-top: 3vw; */
 }
+.footer a {
+    color: #e2e2e2;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.footer .contact {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .footer .label {
     white-space: normal;
+}
+.mm {
+    margin-top: 200px !important;
 }
 /* mail form */
 .single-input input,.single-input textarea {
@@ -1218,7 +1231,7 @@ article {
         width: 11vh;
     }
     [class*=__text-1] {
-        line-height: 8vh;
+        line-height: auto;
     }
 }
 /*mobile < 767.98px*/
