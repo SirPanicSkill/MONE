@@ -881,7 +881,7 @@ span[class*=__text-2] {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: #5cc5c4;
 }
@@ -905,7 +905,7 @@ span[class*=__text-2] {
     font-size: 18px;
     text-align: center;
     letter-spacing: 2px;
-    /* margin-top: 3vw; */
+    margin: 0;
 }
 .footer a {
     color: #e2e2e2;
@@ -914,14 +914,17 @@ span[class*=__text-2] {
     letter-spacing: 2px;
 }
 .footer .contact {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 0;
 }
 .footer .label {
     white-space: normal;
 }
-.mm {
-    margin-top: 10vw !important;
+.footer__bottom {
+    height: auto !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* mail form */
 .single-input input,.single-input textarea {
@@ -1026,7 +1029,7 @@ span[class*=__text-2] {
 .social {
     margin: 1vw 0;
 }
-.social a {
+.social a:not(:last-of-type) {
     margin-right: 3vw;
 }
 /**************************************
@@ -1295,7 +1298,7 @@ span[class*=__text-2] {
         }
         .art-0__text-3 {
             font-size: 4.6vw;
-            margin: 30px 0;
+            margin: 20px 0;
         }
         .art-0__link {
             font-size: 5vw;
@@ -1307,6 +1310,9 @@ span[class*=__text-2] {
         /*article 1*/
         .art-1__img-2, .art-1__img-3, .art-1__img-4 {
             width: 19vw;
+        }
+        .art-1__left {
+            order: 2;
         }
         
         /*article 2*/ 
