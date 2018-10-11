@@ -939,7 +939,7 @@ span[class*=__text-2] {
     text-transform: initial;
 }
 .single-input textarea {
-    height: 130px;
+    height: 430px;
     padding-top: 15px;
 }
 .single-input textarea:focus {
