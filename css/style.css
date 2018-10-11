@@ -990,7 +990,7 @@ span[class*=__text-2] {
 /*add checkbox for feedback*/
 .skin_feedback {
     justify-content: flex-start;
-    margin-left: 50px;
+    margin-left: 44px;
 }
 .skin_feedback input[type="checkbox"] {
     display: none;
@@ -1058,7 +1058,7 @@ span[class*=__text-2] {
     }
 }
 /*landscape fix*/
-@media (max-width: 853.98px) and (max-height: 498px) {
+@media (max-width: 853.98px) and (max-height: 498px) and (orientation: landscape) {
     .dNone {
         display: none !important;
     }
@@ -1113,9 +1113,25 @@ span[class*=__text-2] {
         justify-content: normal;
     }
 }
-/*mobile < 415px height */
-@media (max-height: 415px ) {
-    
+/*mobile iphone 5 fix */
+@media (max-height: 481px ) and (max-width: 321px ) {
+    span[class*=__text-2] {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    span[class*=__text-4]:not(.moneBold) {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    div[class*=__main] > * {
+        padding: 5px 20px 0;
+    }
+    div[class*=__main] > *:last-of-type {
+        padding-bottom: 5px;
+    }
+    .art-1__desc__text-1 {
+        font-size: 17px;
+    }
 }
 /*mobile < 576px */
 @media (max-width: 576px ) {
